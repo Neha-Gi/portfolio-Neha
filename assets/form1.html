@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<br lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type="text"],
+        input[type="email"]
+        {
+            margin-top: 20px;
+        }
+        input{
+            margin-top:10px ;
+            margin-bottom:10px ;}
+        body{
+            text-align: center;
+            margin:0 auto;
+            width: 25%;}
+        
+        form{
+            border-style: dotted;
+            border-radius: 5%;
+        border-width: 1px }    
+    </style>
+</head>
+<br>
+    <h1>Registration Form</h1>
+
+   <form>
+    <span>
+        <label for="First_Name">First name</label>        
+        <input 
+            type="text"
+            name="First_Name"
+            placeholder="First_Name"
+            id="First_Name"/> </br>
+            
+        <label for="Last_name">Last Name</label>
+        <input 
+            type="text"
+            name="Last name"
+            placeholder="Last_name"
+        id="Last_name"/> </br>
+
+        <label for="Email">Email</label>
+            <input 
+            type="Email"
+            name="Email"
+            placeholder="Email" 
+            id="Email"/> </br>
+    </span>
+
+    <label for="gender">Gender</label> </br>
+    
+    <input 
+     type="radio"
+     name="gender"
+     id="male"
+     value="male" />
+     <label for="male">Male</label>
+
+     
+    <input 
+    type="radio"
+     name="gender"
+     id="female"
+    value="female"
+    id="female"/>
+    <label for="female">Female</label> </br>
+
+     <label for="country">Country</label>
+     <select name="country" id="country">
+        <option>Select an option</option>
+        <option value="ger">Germany</option>
+        <option value="ind">India</option>
+        <option value="usa">USA</option>
+     </select></br>
+     <label for="message">Message</label>
+        <textarea name="message" id="message" cols="30" rows="10">Type your message here..</textarea> 
+        <input type="checkbox" name="newsletter" id="newsletter"/>
+        <label for="newletter">subscribe to newsletter</label> </br>
+        <input type="submit" value="submit" /> 
+
+    
+        <input 
+      type="submit"
+      value="submit"/>
+    </form>
+
+
+
+
+</form>
+
+</body>
+</html> 
