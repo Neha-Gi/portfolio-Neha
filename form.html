@@ -11,12 +11,13 @@
         margin-bottom: 20px;}
         
         input{margin-top: 20px;
-        margin-bottom: 30px;}
+        margin-bottom: 30px;
+        border-radius: 10px;    }
         body{
             
              text-align: center;
              margin:0 auto;
-             width: 10%;}
+             width: 20%;}
          
         form{
             border-width:2px;
@@ -24,14 +25,14 @@
             padding: 30px;
             border: 5px solid;
             border-radius: 50px;
-            border-color: rgb(8, 105, 8);
-            background-color: #28d4618c;
+            border-color: rgb(92, 73, 9);
+            background-color: rgba(104, 85, 57, 0.562);
             box-sizing: border-box;} 
         select{margin-bottom: 30px;}  
          
-         #name-email {background-color: rgb(252, 238, 220);}
-         #gender-country{background-color: rgb(236, 206, 166);} 
-         #message-submit{background-color: rgb(229, 188, 133);} 
+         #name-email {background-color: rgb(252, 238, 220);border-radius: 10px;}
+         #gender-country{background-color: rgb(236, 206, 166);border-radius: 10px} 
+         #message-submit{background-color: rgb(223, 186, 137);border-radius: 10px} 
     </style>
    
 </head>
@@ -39,12 +40,13 @@
     
     <h1>Registration form</h1>
 
-    <form> 
+    <form name="registration" onsubmit="return validation()"> 
         <div id="name-email">
             <label for="First Name">First Name </label> 
             <input type="text"
             name="First_Name"
-            placeholder="First Name"/>  <br/>
+            placeholder="First Name"
+            id="First_Name"/>  <br/>
         
         
         
@@ -53,7 +55,7 @@
             type="text"
             name="Last name"
             placeholder="Last name"
-            id="Last_name"/> <br/>
+            id="Last_Name"/> <br/>
         
             <label for="Email">Email</label>
             <input
@@ -74,6 +76,8 @@
             
         
             <input
+
+            id="female"
             type="radio"
             name="gender"
             id="female"
@@ -103,8 +107,7 @@
         
     
     </form>
+    <script type="text/javascript" src="assets/js/form.js"></script>
 
 </body>
-<div></div><!--Is a block container--> 
-<span></span><!--Inline container--> 
 </html>
