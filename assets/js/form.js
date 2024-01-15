@@ -18,7 +18,8 @@ if (firstName.length < 8){
 }
 
 if (lastName.length == 0 ){
-    alert('Last Name must be provided');
+    alert('Last Name must be provided')
+    return false
 }
 
 
@@ -28,3 +29,33 @@ if (Country == 'usa' && gender !='female') {
 }
 }
 
+function activateSubmit() {
+const email = document.registration.Email.value
+const firstName = document.registration.First_Name.value
+const lastName = document.registration.Last_Name.value
+const submitBtn = document.getElementById("submit")
+if (email.length > 0 && firstName.length > 0 && lastName.length > 0 )
+
+{ //remove 'submit-disabled' class from submit button 
+    submitBtn.classList.remove ("submit-disabled")
+} else { 
+    // add 'submit-disabled' class if it doesn't exist
+submitBtn.classList.add('submit-disabled')
+}}
+
+function countText() {
+    const textareaCnt = document.registration.message.value.length
+    const para = document.getElementById("text-count")
+
+    if (textareaCnt == 100){
+        //change the text color to green}
+        para.style.color = 'green'
+} else { // change the text color to red
+    para.style.color = 'red'
+    
+
+}
+
+para.textContent = textareaCnt + "/100"
+
+}
